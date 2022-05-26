@@ -1,0 +1,52 @@
+div.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.option:nth-child(odd) {
+    background-color: #fff;
+}
+
+div.questionsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+div.questionsGrid > a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.questionsGrid > a > div > .options {
+    display: none;
+}
+
+div.questionsGrid > a {
+    text-decoration: none;
+    color: black;
+}
